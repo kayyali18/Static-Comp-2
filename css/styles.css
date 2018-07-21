@@ -1,0 +1,28 @@
+/* ------------ Base ----------------  */
+nav {
+  background-color: #262626;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+
+/* ------------ Layout --------------  */
+
+.m-nav-ul {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.m-logo-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+}
+
+/* ------------ Modules --------------  */
+
+
+/* ------------ States --------------  */
+/* ------------ Themes --------------  */
