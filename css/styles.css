@@ -1,28 +1,114 @@
 /* ------------ Base ----------------  */
+
+a:visited {
+  color: inherit;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0;
+  padding: 35px 10px;
+}
+
+main {
+  background-color: rgb(180, 27, 27);
+}
+
 nav {
   background-color: #262626;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr)
 }
+
 
 
 /* ------------ Layout --------------  */
 
-.m-nav-ul {
+.l-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.l-articles {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1rem;
+
+}
+
+/* ------------ Modules --------------  */
+
+.m-article {
+  background-color: white;
+}
+
+.m-hot-btns {
   align-items: flex-end;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
   list-style: none;
+  padding: 0 15px;
+  width: 70%;
+}
+
+.m-hot-btns button {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.m-hot-btns i {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.m-hot-btns li {
 }
 
 .m-logo-profile {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;  
+  align-items: flex-end;
 }
 
-/* ------------ Modules --------------  */
+.m-logo-profile h1 {
+  font-size: 56px;
+  margin: 0;
+  padding: 1rem;
+}
 
+.m-user-display {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 190px;
+}
+
+.m-user-display a {
+  color: rgb(57, 105, 135);
+}
+
+.fas {
+  padding:  1rem;
+}
 
 /* ------------ States --------------  */
+
+.m-hot-btns button:hover,
+.m-hot-btns i:hover {
+  color: red;
+}
 /* ------------ Themes --------------  */
+
+.img-1 {
+  background: url('../imgs/Vettel.png');
+  background-position: center;
+  background-size: cover;
+}
