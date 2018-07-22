@@ -22,6 +22,7 @@ h5, h6 {
 
 main {
   background-color: rgb(180, 27, 27);
+  height: 100vh;
 }
 
 nav {
@@ -38,7 +39,8 @@ table {
 
 .title {
   font-size: 40px;
-  padding: 35px 10px;
+  margin-left: 1rem;
+  padding: 35px 0;
 }
 
 
@@ -175,7 +177,7 @@ table {
 }
 
 .m-portrait .flag {
-  /* margin: 5px 20px; */
+  margin: 0px 15px;
   border-radius: 150%;
 }
 
@@ -199,7 +201,7 @@ table {
 
 .starting-grid {
   border-left: 2px solid black;
-  text-align: justify;
+  text-align: center;
   width: 100%;
 }
 
@@ -224,7 +226,7 @@ a.black:hover {
 
 .m-hot-btns button:hover,
 .m-hot-btns i:hover {
-  color: red;
+  color: #ee0202;
 }
 
 .m-layover:hover {
@@ -244,10 +246,6 @@ a.black:hover {
 
   .hide-for-tablet {
     display: none;
-  }
-
-  .starting-grid {
-    text-align: center;
   }
 }
 
@@ -285,6 +283,12 @@ a.black:hover {
 .img-2 {
   background: url('../imgs/Vettel Bahrain.png');
   background-position: center;
+  background-size: cover;
+}
+
+.img-3 {
+  background: url('../imgs/Ricciardo Small.png');
+  background-position: top;
   background-size: cover;
 }
 
