@@ -163,9 +163,10 @@ box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
 }
 
 .m-portrait .flag {
-  margin: 0px 15px;
   border-radius: 150%;
   height: 60px;
+  margin: 0px 15px;
+  opacity: 0.5;
 }
 
 .m-layover p {
@@ -215,6 +216,11 @@ box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
 
 a.black:hover {
   color: #ee0202;
+}
+
+td:hover {
+  color: #ee0202;
+  cursor: default;
 }
 
 .m-hot-btns i:hover {
@@ -338,8 +344,7 @@ a.black:hover {
 }
 
 .m-layover {
-  background-color: rgba(19, 19, 19, 0.62);
-  filter: saturate(30%);
+  background-color: rgba(23, 23, 23, 0.77);
 }
 
 .uppercase {
@@ -348,6 +353,10 @@ a.black:hover {
 
 .white {
   color: white;
+}
+
+.red {
+  color: #ee0202;
 }
 
 
