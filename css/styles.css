@@ -298,48 +298,51 @@ td:hover {
 .img-1 {
   background: url('../imgs/Vettel.png');
   background-position: center;
-  background-size: cover;
 }
 
 .img-2 {
   background: url('../imgs/Vettel Bahrain.png');
   background-position: center;
-  background-size: cover;
 }
 
 .img-3 {
   background: url('../imgs/Ricciardo Small.png');
   background-position: top;
-  background-size: cover;
 }
 
 .img-4 {
   background: url('../imgs/Hamilton.png');
   background-position: right;
-  background-size: cover;
 }
 
 .img-5 {
   background: url('../imgs/Hamilton 2.png');
   background-position: right;
-  background-size: cover;
 }
 
 .img-6 {
   background: url('../imgs/Ricciardo RB.png');
   background-position: right;
-  background-size: cover;
 }
 
 .img-7 {
   background: url('../imgs/Vettel Win.png');
   background-position: right;
-  background-size: cover;
 }
 
 .img-8 {
   background: url('../imgs/Bottas.png');
   background-position: top;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7,
+.img-8 {
   background-size: cover;
 }
 
