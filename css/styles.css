@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-a:visited {
-  color: inherit;
-}
-
 body {
   font-family: 'Orbitron', sans-serif;
   word-wrap: break-word;
@@ -21,20 +17,17 @@ h5, h6 {
 }
 
 main {
-  background-color: rgb(180, 27, 27);
-  height: 100vh;
+  background-color: #fff;
+  height: 100%;
 }
 
 nav {
-  background-color: #262626;
+  background-color: #171717;
+  height: 7rem;
 }
 
 table {
   border-collapse: collapse;
-}
-
-.fas {
-  padding:  1rem;
 }
 
 .title {
@@ -91,6 +84,9 @@ table {
 
 .m-article {
   background-color: white;
+-webkit-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
 }
 
 .m-article-content {
@@ -121,34 +117,24 @@ table {
   justify-content: space-between;
   font-size: 24px;
   list-style: none;
-  padding: 0 15px;
-  width: 70%;
-}
-
-.m-hot-btns button {
-  background: none;
-  border: none;
-  color: white;
-  display: flex;
-  align-items: center;
+  width: 80%;
 }
 
 .m-hot-btns i {
-  color: white;
-  display: flex;
-  align-items: center;
   font-size: 16px;
-  padding: 0 10px;
+  color: #ff1e00;
+  padding: 15px;
 }
 
-.m-hot-btns li {
+.m-hot-btns span {
+  padding-left: 10px;
 }
 
 .m-icon {
-  fill: #fff;
+  fill: #ff1e00;
   height: 51px;
-  padding-left: 10px;
-  width: 100px;
+  padding-right: 1rem;
+  width: 163px;
   /* height: 61.56244px;
   width: 246.69695px; */
 }
@@ -179,6 +165,7 @@ table {
 .m-portrait .flag {
   margin: 0px 15px;
   border-radius: 150%;
+  height: 60px;
 }
 
 .m-layover p {
@@ -188,21 +175,27 @@ table {
 }
 
 .m-user-display {
-  color: white;
+  color: #ff1e00;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin: 1rem;
   width: 190px;
 }
 
 .m-user-display a {
-  color: rgb(57, 105, 135);
+  padding-left: 10px;
+}
+
+
+.fix-space {
+  margin-top: 10px !important;
 }
 
 .starting-grid {
   border-left: 2px solid black;
   text-align: center;
-  width: 100%;
+  width: 98%;
 }
 
 .starting-grid tbody {
@@ -214,7 +207,7 @@ table {
 }
 
 .starting-grid .limiter {
-  display: none;
+  display: none
 }
 
 
@@ -224,9 +217,9 @@ a.black:hover {
   color: #ee0202;
 }
 
-.m-hot-btns button:hover,
 .m-hot-btns i:hover {
   color: #ee0202;
+  cursor: pointer;
 }
 
 .m-layover:hover {
@@ -239,6 +232,10 @@ a.black:hover {
   display: none;
 }
 
+.white:hover {
+  color: #ff1e00;
+}
+
 @media only screen and (max-width: 1024px) {
   .hide-for-desktop {
     display: contents;
@@ -246,6 +243,10 @@ a.black:hover {
 
   .hide-for-tablet {
     display: none;
+  }
+
+  .m-hot-btns i {
+    width: 160%;
   }
 }
 
@@ -257,6 +258,15 @@ a.black:hover {
   .hide-for-mobile {
     display: none;
   }
+
+  .m-hot-btns {
+    display: block;
+  }
+
+  .m-hot-btns i {
+    padding: 15px 0 0 15px;
+    width: 160%;
+  }
 }
 
 
@@ -266,12 +276,17 @@ a.black:hover {
   color: #171717;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .dark {
   color: #4a4a4a;
 }
 
-.bold {
-  font-weight: 700;
+.font {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
 }
 
 .img-1 {
@@ -292,13 +307,52 @@ a.black:hover {
   background-size: cover;
 }
 
+.img-4 {
+  background: url('../imgs/Hamilton.png');
+  background-position: right;
+  background-size: cover;
+}
+
+.img-5 {
+  background: url('../imgs/Hamilton 2.png');
+  background-position: right;
+  background-size: cover;
+}
+
+.img-6 {
+  background: url('../imgs/Ricciardo RB.png');
+  background-position: right;
+  background-size: cover;
+}
+
+.img-7 {
+  background: url('../imgs/Vettel Win.png');
+  background-position: right;
+  background-size: cover;
+}
+
+.img-8 {
+  background: url('../imgs/Bottas.png');
+  background-position: top;
+  background-size: cover;
+}
+
 .m-layover {
   background-color: rgba(233, 232, 218, 0.73);
   filter: saturate(30%);
 }
 
+.m-layover-img {
+  background-color: rgba(54, 142, 126, 0.13);
+  filter: saturate(90%);
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.white {
+  color: white;
 }
 
 
