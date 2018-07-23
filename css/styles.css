@@ -44,7 +44,7 @@ table {
 .l-articles {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   margin: 1rem;
 }
 
@@ -242,7 +242,7 @@ td:hover {
   color: #ff1e00;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1124px) {
   .hide-for-desktop {
     display: contents;
   }
