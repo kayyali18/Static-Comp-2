@@ -281,14 +281,6 @@ td:hover {
     width: 160%;
   }
 
-  .m-portrait .flag {
-    border-radius: 150%;
-    height: 60px;
-    width: 80px;
-    margin: 0px 15px;
-    opacity: 0.5;
-  }
-
   .title {
     margin: 0;
     text-align: center;
