@@ -22,7 +22,7 @@ main {
 }
 
 nav {
-  background-color: #171717;
+  background-color: #ee0202;
   height: 7rem;
 }
 
@@ -120,7 +120,7 @@ box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
   width: 80%;
 }
 
-.m-hot-btns i {
+.m-hot-btns {
   font-size: 16px;
   color: #ff1e00;
   padding: 15px;
@@ -131,7 +131,7 @@ box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
 }
 
 .m-icon {
-  fill: #ff1e00;
+  fill: #fff;
   height: 51px;
   padding-right: 1rem;
   width: 163px;
@@ -362,6 +362,10 @@ td:hover {
   background-color: rgba(23, 23, 23, 0.77);
 }
 
+.red {
+  color: #ee0202;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -370,11 +374,65 @@ td:hover {
   color: white;
 }
 
-.red {
-  color: #ee0202;
+/* Dropdown menu */
+
+.dropdown {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
 
+li {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+    background: #171717;
+    cursor: pointer;
+}
+
+ul li ul {
+  background: #171717;
+  display: none;
+  left: 0;
+  margin-top: 1rem;
+  min-width: 5rem;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 100vw;
+  /* width: 50rem; */
+  visibility: hidden;
+}
+
+ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul:hover {
+}
+ul li ul li:hover {
+  background: #ee0202;
+}
 
 
 
